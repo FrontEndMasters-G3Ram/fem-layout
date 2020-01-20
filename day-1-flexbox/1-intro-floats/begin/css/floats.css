@@ -24,7 +24,11 @@ a {
   float: none;
   background-color: #fff;
 }
-
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 div img {
   width: 100%;
   max-width: 225px;
