@@ -23,4 +23,5 @@ li {
 .flex2 {
   border: 2px dotted green;
   order: 2;
+  flex: 2 1 25%;
 }
