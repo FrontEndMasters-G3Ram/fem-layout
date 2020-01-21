@@ -5,39 +5,49 @@ html {
 }
 /* inherit border-box on all elements in the universe and before and after
  */
-*, 
-*:before, 
+*,
+*:before,
 *:after {
   box-sizing: inherit;
 }
 
 body {
-	font-family: Arial, Geneva, sans-serif;
+  font-family: Arial, Geneva, sans-serif;
 }
 a {
-	color: #2772B0;
+  color: #2772b0;
 }
 .wrapper {
-	width: 97%;
-	max-width: 1200px;
-	margin: 0 auto;
-	float: none;
-	background-color: #fff;
+  width: 97%;
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
+  background-color: #fff;
 }
 
 div img {
-	width: 100%;
-	max-width: 225px; 
+  width: 100%;
+  max-width: 225px;
 }
 
 /* grid system -- mobile first! */
-
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
 
 /* Mobile Landscape Screen Sizes */
-@media only screen and (min-width: 480px)  {
-
+@media only screen and (min-width: 480px) {
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
-
+  .col-1 {
+    flex: 0 0 24%;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
