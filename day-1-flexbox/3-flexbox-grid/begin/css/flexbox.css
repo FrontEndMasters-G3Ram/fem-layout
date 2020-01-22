@@ -84,6 +84,9 @@ div img {
     flex: 2 0 22%;
     order: 0;
   }
+  .reverse {
+    flex-direction: row-reverse;
+  }
   /* .col-4 {
     flex: 0 0 100%;
   } */
