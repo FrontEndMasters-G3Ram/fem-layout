@@ -166,7 +166,9 @@ footer a {
     max-width: 767px;
     /* float: none; */
   }
-  .col-1,
+  .col-1 {
+    display: flex;
+  }
   .col-2,
   .col-1-2,
   .col-3,
@@ -176,6 +178,8 @@ footer a {
   }
   div.row {
     padding: 0 2em;
+    display: flex;
+    flex-direction: column;
   }
   aside[class*="sidebar"] {
     /* float: left; */
