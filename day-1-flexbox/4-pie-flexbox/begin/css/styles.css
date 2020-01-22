@@ -70,26 +70,26 @@ nav a:hover {
   color: #00c4c7;
 }
 
-.row:before,
+/* .row:before,
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 div.row {
   background-color: #fff6e0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 1em;
 }
-.floatleft {
+/* .floatleft {
   float: left;
   margin: 0 1em 1em 0;
 }
 .floatright {
   float: right;
   margin: 0 0 1em 1em;
-}
+} */
 [class*="sidebar"] {
   border: 1px solid #00c4c7;
   border-radius: 10px;
@@ -133,7 +133,7 @@ blockquote cite {
 footer {
   background-color: #00cdd1;
   color: white;
-  clear: both;
+  /* clear: both; */
   margin: 0 0.5em 3em 0.5em;
 }
 footer p {
@@ -164,7 +164,7 @@ footer a {
   .wrapper {
     width: 97%;
     max-width: 767px;
-    float: none;
+    /* float: none; */
   }
   .col-1,
   .col-2,
@@ -178,7 +178,7 @@ footer a {
     padding: 0 2em;
   }
   aside[class*="sidebar"] {
-    float: left;
+    /* float: left; */
     width: 47%;
     margin-right: 3%;
   }
@@ -203,11 +203,11 @@ footer a {
   .wrapper {
     width: 97%;
     max-width: 1200px;
-    float: none;
+    /* float: none; */
   }
 
   [class*="col-"] {
-    float: left;
+    /* float: left; */
     margin-left: 3.33333%;
     min-height: 1px;
   }
@@ -221,6 +221,16 @@ footer a {
   }
   .col-3 {
     width: 69.16665%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .col-3 p {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .floatright {
+    display: flex;
+    flex-direction: row-reverse;
   }
   .col-4 {
     width: 96.66666%;
@@ -234,6 +244,7 @@ footer a {
   }
   div.row {
     padding: 0;
+    display: flex;
   }
   /* nav li,
   nav li:nth-child(even),
