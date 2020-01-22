@@ -58,6 +58,9 @@ div img {
   .col-2 {
     flex: 0 0 48%;
   }
+  .col-1-2-1 {
+    order: -1;
+  }
   /* .col-3 {
     flex: 0 0 100%;
   }
@@ -79,6 +82,7 @@ div img {
   }
   .col-1-2-1 {
     flex: 2 0 22%;
+    order: 0;
   }
   /* .col-4 {
     flex: 0 0 100%;
